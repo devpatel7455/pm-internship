@@ -1,0 +1,66 @@
+  <!doctype html>
+  <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Contact — AI Allocation</title>
+    <link rel="stylesheet" href="contact.css">
+  </head>
+  <body>
+    <header>
+      <h1>AI Allocation</h1>
+      <nav>
+        <a href="index.html">Home</a> |
+        <a href="internships.html">Internships</a> |
+        <a href="about.html">About</a> |
+        <a href="contact.html"><strong>Contact</strong></a>
+      </nav>
+      <hr>
+    </header>
+
+    <main>
+      <h2>Contact Us</h2>
+      <p>If you have questions about the PM Internship Scheme or this AI Allocation prototype, feel free to reach out!</p>
+
+      <form id="contact-form">
+        <p>
+          <label>Name:<br>
+          <input type="text" name="name" placeholder="Your full name" required></label>
+        </p>
+        <p>
+          <label>Email:<br>
+          <input type="email" name="email" placeholder="your.email@example.com" required></label>
+        </p>
+        <p>
+          <label>Message:<br>
+          <textarea name="message" placeholder="Write your message here..." required></textarea></label>
+        </p>
+        <p>
+          <button type="submit">Send Message</button>
+        </p>
+      </form>
+      <p><em>Note: This form is a frontend demo. No real emails will be sent.</em></p>
+
+      <h3>Contact Info</h3>
+      <p>Email: <a href="mailto:developer@pmallocation.com">developer@pmallocation.com</a></p>
+      <p>Phone: +91-9876543210</p>
+      <p>Address: AI Allocation Demo Office, New Delhi, India</p>
+
+      <h3>Location</h3>
+      <p>[Google Maps Placeholder]</p>
+    </main>
+
+    <footer>
+      <hr>
+      <p>© 2025 AI-Based Smart Allocation Engine — Prototype.</p>
+    </footer>
+
+    <script>
+      document.getElementById('contact-form').addEventListener('submit', function(e){
+        e.preventDefault();
+        alert('Thanks! Your message is received (frontend demo only).');
+        this.reset();
+      });
+    </script>
+  </body>
+  </html>

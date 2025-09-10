@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>AI-Based Smart Allocation Engine — PM Internship Scheme</title>
+  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+</head> 
+<body>
+  <header class="topbar">
+    <div class="container">
+      <a class="brand" href="index.html">
+        <img src="assets/logo.svg" alt="logo" class="logo"/> AI-Based Smart Allocation Engine
+      </a>
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="internships.html">Internships</a>
+        <a href="about.html">About</a>
+        <a href="contact.html" class="btn">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <h1>Find the right internship — smartly allocated using AI</h1>
+          <p class="lead">A prototype frontend clone for the PM Internship Scheme. Search internships, filter by domain, location and skill-match score. Built as a frontend-only demo for hackathons and prototypes.</p>
+
+          <div class="search-row">
+            <input id="search-input" placeholder="Search internships, skills, locations..." />
+            <select id="domain-filter">
+              <option value="">All domains</option>
+              <option>Web Development</option>
+              <option>Data Science</option>
+              <option>Product Management</option>
+              <option>Design</option>
+            </select>
+            <button id="search-btn" class="btn primary">Search</button>
+          </div>
+
+          <div class="stats">
+            <div><strong id="total-count">0</strong><span>Open Internships</span></div>
+            <div><strong>50k+</strong><span>Applicants</span></div>
+            <div><strong>All India</strong><span>Coverage</span></div>
+          </div>
+        </div>
+
+        
+      </div>
+    </section>
+
+    <section class="featured container">
+      <h2>Top matches for you</h2>
+      <div id="cards" class="cards-grid"></div>
+    </section>
+
+    <section class="cta container">
+      <h2>You want to get </h2>
+      <p> Build you skill and get </p>
+      <a href="internships.html" class="btn">Browse internships</a>
+    </section>
+  </main>
+    
+  <footer class="site-footer">
+   <div class="social-links">
+  <a href="#" target="_blank"><i class="fab fa-twitter"></i> Twitter</a>
+  <a href="#" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+  <a href="#" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+</div>
+
+    <div class="container">
+      <p>© 2025 AI-Based Smart Allocation Engine — Prototype. Not an official government site.</p>
+    </div>
+  </footer>
+
+<script src="app.js"></script>
+</body>
+</html>

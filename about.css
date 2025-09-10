@@ -1,0 +1,188 @@
+/* ----------------------------
+   Root & Global Styles
+----------------------------- */
+:root {
+  --primary: #0b5cff;    /* Government blue */
+  --secondary: #002147;  /* Dark blue header/footer */
+  --muted: #6b7280;      /* Gray text */
+  --bg: #ffffff;         /* Page background */
+  --card: #f5f6fa;       /* Card / box background */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", "Segoe UI", Arial, sans-serif;
+}
+
+body {
+  background: var(--bg);
+  color: #111827;
+  line-height: 1.6;
+}
+
+/* ----------------------------
+   Header / Navbar
+----------------------------- */
+.topbar {
+  background: var(--secondary);
+  color: #fff;
+  padding: 0.8rem 0;
+  border-bottom: 3px solid var(--primary);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.container {
+  width: 92%;
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: #fff;
+  text-decoration: none;
+}
+
+.brand .logo {
+  height: 40px;
+  margin-right: 12px;
+}
+
+.nav a {
+  margin-left: 1.5rem;
+  text-decoration: none;
+  color: #e2e8f0;
+  transition: color 0.3s, border-bottom 0.3s;
+  font-size: 0.95rem;
+  padding-bottom: 2px;
+}
+
+.nav a.active {
+  font-weight: 600;
+  border-bottom: 2px solid var(--primary);
+}
+
+.nav a:hover {
+  color: #fff;
+}
+
+.nav .btn {
+  background: var(--primary);
+  padding: 0.45rem 1rem;
+  border-radius: 6px;
+  color: #fff;
+  font-weight: 500;
+}
+
+/* ----------------------------
+   About Page Layout
+----------------------------- */
+.about {
+  padding: 3rem 0;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.about h1 {
+  color: var(--secondary);
+  margin-bottom: 1.5rem;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.about h3 {
+  color: var(--primary);
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  font-size: 1.3rem;
+}
+
+.about p {
+  font-size: 1rem;
+  color: #374151;
+  margin-bottom: 1rem;
+  line-height: 1.7;
+}
+
+.about ul,
+.about ol {
+  margin-left: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.about ul li,
+.about ol li {
+  margin-bottom: 0.6rem;
+  font-size: 1rem;
+  color: #374151;
+  line-height: 1.6;
+  position: relative;
+  padding-left: 1.2rem;
+}
+
+/* Add bullet style for ul */
+.about ul li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: var(--primary);
+  font-weight: bold;
+}
+
+/* Numbered list style */
+.about ol li {
+  padding-left: 1.5rem;
+}
+
+/* Code styling */
+.about code {
+  background: #e5e7eb;
+  padding: 0.2rem 0.4rem;
+  border-radius: 4px;
+  font-family: monospace;
+  color: #111827;
+}
+
+/* ----------------------------
+   Footer
+----------------------------- */
+.site-footer {
+  background: var(--secondary);
+  color: #cbd5e1;
+  padding: 1rem 0;
+  text-align: center;
+  font-size: 0.9rem;
+  border-top: 3px solid var(--primary);
+}
+
+/* ----------------------------
+   Responsive
+----------------------------- */
+@media (max-width: 768px) {
+  .about {
+    padding: 2rem 1rem;
+  }
+
+  .about h1 {
+    font-size: 1.6rem;
+  }
+
+  .about h3 {
+    font-size: 1.2rem;
+  }
+
+  .nav {
+    display: none;
+  }
+}
